@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+ 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>域图滑动演示</title>
+		<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+		 <!-- Link Swiper's CSS -->
+  		<link rel="stylesheet" href="dist/css/swiper.min.css">
+ 
+  <!-- Demo styles -->
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+ 
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    
+    img{
+    	border: 0;
+    	width: 100%;
+    	height: 100%;
+    }
+  </style>
+	</head>
+ 
+	<body>
+ 
+ 
+ 
+<!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/1.jpg" /></div>
+      <div class="swiper-slide"><img src="images/2.jpg" /></div>
+      <div class="swiper-slide"><img src="images/3.jpg" /></div>
+      <div class="swiper-slide"><img src="images/4.jpg" /></div>
+      <div class="swiper-slide"><img src="images/5.jpg" /></div>
+      <div class="swiper-slide"><img src="images/6.jpg" /></div>
+      <div class="swiper-slide"><img src="images/7.jpg" /></div>
+      <div class="swiper-slide"><img src="images/8.jpg" /></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+ 
+  <!-- Swiper JS -->
+  <script src="dist/js/swiper.min.js"></script>
+ 
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+  
+</body>

@@ -34,7 +34,7 @@ ul {
 }
 
 /*版心*/
-.w {
+.w,.footdiv,.midbom{
     width: 1250px;
     margin: 0 auto;
     position: relative;
